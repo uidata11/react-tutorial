@@ -1,20 +1,8 @@
-import { githubUrl } from "./database";
-const Footer = ({ email, mobile, githubUrl, intro }) => {
+const Footer = ({ name }) => {
   return (
-    <footer>
-      <ul>
-        <li>
-          <a href="">KCH's github</a>
-        </li>
-        <li>
-          <a href="">{githubUrl}</a>
-        </li>
-        <li>
-          <a href="">010 1234 1234</a>
-        </li>
-      </ul>
-      <p>{intro}</p>
-    </footer>
+    <div>
+      <p>{name}의 페이지에 방문해주셔서 감사합니다. ㅂㅂ</p>
+    </div>
   );
 };
 

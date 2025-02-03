@@ -1,7 +1,9 @@
-const Header = () => {
+import { useState } from "react";
+
+const Header = ({ name }) => {
   return (
     <header>
-      <h1>Page of Kch</h1>
+      <h1>{name}의 소개 페이지</h1>
     </header>
   );
 };
