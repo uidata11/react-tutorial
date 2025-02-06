@@ -5,13 +5,23 @@ const Timer = () => {
   const [counting, setCounting] = useState(false);
 
   useEffect(() => {
-    console.log(counting);
+    console.log({ counting });
   }, [counting]);
+
+  setInterval(() => {
+    setTime;
+  }, interval);
 
   return (
     <div>
       <h1>{time}초</h1>
-      <button onClick={counting}>{counting ? "stop" : "start"}</button>
+      <button
+        onClick={() => {
+          setCounting((asd) => !asd);
+        }}
+      >
+        {counting ? "stop" : "start"}
+      </button>
     </div>
   );
 };
