@@ -3,7 +3,7 @@ import { fetchList, store } from "../database";
 
 const database = localStorage;
 
-const store = (item) =>
+const storee = (item) =>
   new Promise((resolve, reject) => {
     setTimeout(() => {
       if (item.length === 0) {
